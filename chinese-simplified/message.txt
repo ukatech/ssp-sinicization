@@ -1,0 +1,139 @@
+charset,UTF-8
+
+//Error Message
+error.appinit,在发送请求过程中发生了一个错误。\n为了得到更详细的错误报告,请改变 "使用除错助手" 设置。
+error.apprun,程序在执行过程中发生了一个内在的错误,所以中止运行。\n为了得到更详细的错误报告, 请改变 "使用除错助手" 设置。
+error.cannotshowusagegraph,起始时间不充足, 所使用的时间图表不能显示. 请在一分钟后重试。
+error.invalidipport,不能使用所设置的端口。请把它设置在 1024 与65535 之间。
+error.sstp.cannotlisten,不能连接,网络连接设置因为端口问题发生故障。\n请检查是否该端口与其他应用程序所设置相重叠, 或是一个错误端口。
+error.nofile,相关文件或文件夹丢失。\n请重新安装SSP或手动修正。
+
+//Ask / Info
+info.threadbusy,正在处理一些命令。\n请等几分钟再试一次。\n\n真的要强行中止吗?
+info.compatiblemode,该人格也许需要旧规格的支持。\n要开启旧规格支援模式吗?
+info.notinstalled,没有安装。\n要开打开下载网址吗?
+info.delghost,你确定删除这个人格吗?\n一旦执行不能取消该命令。
+info.netconnection,不能连接到网络, 或者你置了网络禁止连接时间段。\n进行连接?
+info.sstplog,请设置 SSTP 日志的最大尺寸 。\n如果日志文大小超过该设置, 将会自动删掉旧的文件。
+info.sstpport,请设置 SSTP 端口。(0-65535)
+info.serikowait,SERIKO 等待数 (请输入等待时间的百分数)
+info.charset,请选择将使用的人格语系。
+info.vanish,反安装功能禁止。\n请先切换设定。
+info.sender,请输入SHIORI发送器文本。\n(Materia:embryo CROW:crow Default:empty/SSP)
+
+info.install.overlap,目标文件夹已存在。\n你想安装到其他目录吗?
+info.install.refresh,将删除所有旧目录和更新。\n你想要安装到其他目录吗?
+
+info.install.overwrite,正在尝试安装到现有目录。\你想要覆盖它吗？
+info.install.overwrite.additional,选择“是”覆盖。\n选择“不”自动更改文件夹名称以避免覆盖。
+info.install.refresh.a,正在尝试干净（全新）安装到现有目录。\n现有数据将丢失。你想要覆盖它吗？
+
+info.install.invalidsupplement,目标文件可能存在问题。\n无论如何都要安装吗?
+info.install.select,请选择安装文件夹
+
+info.recommended.g-to-b.change.recommend,你已选择了人格建议之外的对话框。\n如果切换，人格可能出现意外行为。\n是否仍要更改？
+info.recommended.g-to-b.delete.default,你正在删除对话框"%2"，这个对话框被以下人格推荐：\n%1\n仍然删除？
+info.recommended.g-to-b.delete.recommend,你正在删除对话框"%2"，这个对话框被以下人格指定：\n%1\n如果你进行了删除，某些人格可能出现意外行为。\n仍然删除？
+
+info.recommended.b-to-g.change.recommend,这个对话框为以下人格专用：\n%1\n这个对话框不被推荐给其他人格使用。\n是否仍要更改？
+info.recommended.b-to-g.delete.recommend,已删除所有使用对话框"%1"的人格。\n顺便删除此对话框么？
+
+info.toomanyselection,选择的元素有些多。\n确认执行？
+
+info.errorlog,存在错误/警告日志。单击此处显示错误日志列表。
+info.overwrite,已经存在。\n是否覆写？
+
+info.developer,和我契约，成为开发者吧！\n打开这个功能的话，需要做好人格大剧透等各种各样的觉悟。\n仍然确定吗？
+
+info.developer.exit,现在在“禁用\-标记退出”模式下。\n请使用开发人员面板进行设置以恢复正常。
+info.developer.update,现在在“更新只检查”模式下。\n请使用开发人员面板进行设置以恢复正常。
+
+info.virtualdesktop,已在另一虚拟桌面启动。
+
+info.gcsakura.found,这个人格已经登录了。
+info.gcsakura.deny,由于install.txt或robots.txt配置，注册被拒绝。
+info.gcsakura.nohomeurl,找不到必需的“homeurl”项。无法注册不可更新的人格。
+info.gcsakura.nocraftman,找不到craftman/craftmanw/craftmanurl条目之一。无法注册具有不完整作者信息的人格。
+info.gcsakura.disconnect,无法连接到GCS（Ghost Capter Sakura）服务器。
+
+//Resource
+resource.common.yesno,是,不
+resource.common.okcancel,确定,取消
+resource.common.addmoddel,加入,修改,删除
+resource.common.other,其他
+resource.common.menu,目录
+resource.common.sameas,同样的处理也适用于以下项目
+resource.common.dontsayagain,不再提示
+
+resource.listdialoglabel,名字,作者,路径,本体名,使魔名
+resource.listdialogfind,请输入你想查询的文字。
+resource.scriptloglabel,路径,类别,脚本
+
+resource.biff.allaccount,全部帐户(&A)
+
+resource.browser.select,选择网页浏览器
+resource.mailer.select,选择邮箱程序
+resource.editor.select,选择编辑器
+resource.filer.select,选择文件管理器
+resource.svn.select,选择版本控制程序
+resource.git.select,选择Git程序
+
+resource.sound.select,声音文件
+resource.schedule.date,记事本:%d.%d.%d
+resource.rateofuse.menu,人格呼出,人格终了,未安装,清除数据
+
+resource.setting.balloon.command,不设定,与左键一样,中止语法,改变方向,移动对话框,打开菜单,移动角色框
+resource.setting.sstp.boot,不启动,只有消息(SSTP/1.5),尽可能启动人格 (IfGhost)
+resource.setting.sstp.close,当隐藏对话时关闭,留下,设置关闭时间...
+resource.setting.update,标准(和其他系统相容),严格(SSP预设),修复模式(全部检查)
+resource.aboutghost.select,人格信息...,外形信息...
+resource.explorer.select,人格,外形,对话框,在线新闻,外挂
+
+resource.setting.ghostcloseduration,直到人格关闭为止
+resource.setting.title,SSP:内部设定
+resource.setting.messengerlabel,用户名,地址,端口,团体
+resource.setting.dirservlabel,服务器,登陆,说明
+resource.setting.ipportlabel,端口,状况
+resource.setting.bifflabel,账户,地址,自动检查
+
+resource.update.latest,已经在使用最新版本。不需要更新。
+resource.update.exist,新版本已发布。想要下载并安装吗?
+resource.update.error,无法检查 SSP 版本。
+
+resource.schedule.type,事件,会议,约会,预约,限制时间,晚会,日期,工作,外出,电视节目,唱片,Cd,游戏,录像,书,其他
+
+//Script
+script.biff.check,检查邮件...
+script.updatedata.creating,制作网络更新文件...
+script.updatedata.created,网络更新文件已建立。
+script.nar.creating,制作NAR...
+script.nar.created,NAR制作完毕。
+
+//Messenger
+messenger.info.deluser,确定要删除选择的收件人吗?
+
+//POP
+biff.info.delaccount,确定删除所选账户吗?
+
+//LOG
+log.definedtwice,重复定义。
+log.boundrectempty,边框面积为空。
+log.offset,坐标位置错误。
+log.notfound,找不到。
+log.empty,为空。
+log.noimage,没有影像。
+log.invalid,不合法
+log.typo,误字
+log.orphan,没有被使用
+log.bracebeginnotfound,"{" 找不到。
+log.braceendnotfound,"}" 找不到。
+log.braceextrachar,额外字元。在 "{" 或 "}" 前后。
+log.newold,新定义，旧版本。（重复定义）
+log.oldnew,旧定义，新版本。（重复定义）
+log.invalidalias,不合法的别名。
+log.urlslashadd,URL "/" 已加入。
+log.deletetxtconflict,已在 delete.txt 中
+log.compatibility,这个定义在兼容性上有问题。
+log.moduleerror,通信错误。可能有文件损坏。
+log.similar,--相似记录重复次数：
+log.pngpna,PNA大小与PNG不同，或者PNA不是灰度：
