@@ -17,10 +17,10 @@ info.sstpport,請設定SSTP埠。（0-65535）
 info.serikowait,SERIKO等待數（請輸入等待時間的百分數）
 info.charset,請選擇將使用的人格語系。
 info.vanish,反安裝功能禁止。\n請先切換設定。
-info.sender,請輸入SHIORI發送器文字。\n（Materia:embryo CROW：crowDefault:empty/SSP）
+info.sender,請輸入SHIORI發送器文字。\n（Materia:embryo CROW:crow Default:empty/SSP）
 info.install.overlap,目標資料夾已存在。\n你想安裝到其他目錄嗎？
 info.install.refresh,將删除所有舊目錄和更新。\n你想要安裝到其他目錄嗎？
-info.install.overwrite,正在嘗試安裝到現有目錄。\你想要覆蓋它嗎？
+info.install.overwrite,正在嘗試安裝到現有目錄。\n你想要覆蓋它嗎？
 info.install.overwrite.additional,選擇“是”覆蓋。\n選擇“不”自動更改資料夾名稱以避免覆蓋。
 info.install.refresh.a,正在嘗試乾淨（全新）安裝到現有目錄。\n現有數據將遺失。你想要覆蓋它嗎？
 info.install.invalidsupplement,目標檔案可能存在問題。\n無論如何都要安裝嗎？
