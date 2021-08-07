@@ -24,7 +24,7 @@ info.sender,请输入SHIORI发送器文本。\n(Materia:embryo CROW:crow Default
 info.install.overlap,目标文件夹已存在。\n你想安装到其他目录吗?
 info.install.refresh,将删除所有旧目录和更新。\n你想要安装到其他目录吗?
 
-info.install.overwrite,正在尝试安装到现有目录。\你想要覆盖它吗？
+info.install.overwrite,正在尝试安装到现有目录。\n你想要覆盖它吗？
 info.install.overwrite.additional,选择“是”覆盖。\n选择“不”自动更改文件夹名称以避免覆盖。
 info.install.refresh.a,正在尝试干净（全新）安装到现有目录。\n现有数据将丢失。你想要覆盖它吗？
 
