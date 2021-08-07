@@ -56,6 +56,9 @@ info.gcsakura.nohomeurl,找不到必需的“homeurl”项。无法注册不可�
 info.gcsakura.nocraftman,找不到craftman/craftmanw/craftmanurl条目之一。无法注册具有不完整作者信息的人格。
 info.gcsakura.disconnect,无法连接到GCS（Ghost Capter Sakura）服务器。
 
+info.archivepassword.first,此存档/NAR受密码保护。\n请输入密码。
+info.archivepassword.retry,密码不匹配。\n请输入正确的密码。
+
 //Resource
 resource.common.yesno,是,不
 resource.common.okcancel,确定,取消
@@ -137,3 +140,4 @@ log.compatibility,这个定义在兼容性上有问题。
 log.moduleerror,通信错误。可能有文件损坏。
 log.similar,--相似记录重复次数：
 log.pngpna,PNA大小与PNG不同，或者PNA不是灰度：
+log.lavfilter,您可以尝试安装LAV Filters ( https://github.com/Nevcairiel/LAVFilters/releases ) 并重新启动SSP以解决此问题。

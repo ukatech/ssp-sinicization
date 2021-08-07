@@ -1,4 +1,5 @@
 charset,UTF-8
+
 //Error Message
 error.appinit,在發送請求過程中發生了一個錯誤。\n為了得到更詳細的錯誤報告，請改變“使用除錯助手”設定。
 error.apprun,程式在執行過程中發生了一個內在的錯誤，所以中止運行。\n為了得到更詳細的錯誤報告，請改變“使用除錯助手”設定。
@@ -6,6 +7,7 @@ error.cannotshowusagegraph,起始時間不充足，所使用的時間圖表不�
 error.invalidipport,不能使用所設定的埠。請把它設定在1024與65535之間。
 error.sstp.cannotlisten,不能連接，網絡連接設定因為埠問題發生故障。\n請檢查是否該埠與其他應用程序所設定相重疊，或是一個錯誤埠。
 error.nofile,相關檔或資料夾遺失。\n請重新安裝SSP或手動修正。
+
 //Ask / Info
 info.threadbusy,正在處理一些命令。\n請等幾分鐘再試一次。\n\n真的要强行中止嗎？
 info.compatiblemode,該人格也許需要舊規格的支持。\n要開啟舊規格支援模式嗎？
@@ -18,30 +20,45 @@ info.serikowait,SERIKO等待數（請輸入等待時間的百分數）
 info.charset,請選擇將使用的人格語系。
 info.vanish,反安裝功能禁止。\n請先切換設定。
 info.sender,請輸入SHIORI發送器文字。\n（Materia:embryo CROW:crow Default:empty/SSP）
+
 info.install.overlap,目標資料夾已存在。\n你想安裝到其他目錄嗎？
 info.install.refresh,將删除所有舊目錄和更新。\n你想要安裝到其他目錄嗎？
+
 info.install.overwrite,正在嘗試安裝到現有目錄。\n你想要覆蓋它嗎？
 info.install.overwrite.additional,選擇“是”覆蓋。\n選擇“不”自動更改資料夾名稱以避免覆蓋。
 info.install.refresh.a,正在嘗試乾淨（全新）安裝到現有目錄。\n現有數據將遺失。你想要覆蓋它嗎？
+
 info.install.invalidsupplement,目標檔案可能存在問題。\n無論如何都要安裝嗎？
 info.install.select,請選擇安裝資料夾
+
 info.recommended.g-to-b.change.recommend,你已選擇了人格建議之外的對話方塊。\n如果切換，人格可能出現意外行為。\n是否仍要更改？
 info.recommended.g-to-b.delete.default,你正在删除對話方塊“%2”，這個對話方塊被以下人格推薦：\n%1\n仍然删除？
 info.recommended.g-to-b.delete.recommend,你正在删除對話方塊“%2”，這個對話方塊被以下人格指定：\n%1\n如果你進行了删除，某些人格可能出現意外行為。\n仍然删除？
+
 info.recommended.b-to-g.change.recommend,這個對話方塊為以下人格專用：\n%1\n這個對話方塊不被推薦給其他人格使用。\n是否仍要更改？
 info.recommended.b-to-g.delete.recommend,已删除所有使用對話方塊“%1”的人格。\n順便删除此對話方塊麼？
+
 info.toomanyselection,選擇的元素有些多。\n確認執行？
+
 info.errorlog,存在錯誤/警告日誌。按一下此處顯示錯誤日誌清單。
 info.overwrite,已經存在。\n是否覆寫？
+
 info.developer,和我契約，成為開發者吧！\n打開這個功能的話，需要做好人格大劇透等各種各樣的覺悟。\n仍然確定嗎？
+
 info.developer.exit,現在在“禁用\-標記退出”模式下。\n請使用開發人員面板進行設定以恢復正常。
 info.developer.update,現在在“更新只檢查”模式下。\n請使用開發人員面板進行設定以恢復正常。
+
 info.virtualdesktop,已在另一虛擬桌面啟動。
+
 info.gcsakura.found,這個人格已經登入了。
 info.gcsakura.deny,由於install.txt或robots.txt配寘，注册被拒絕。
 info.gcsakura.nohomeurl,找不到必需的“homeurl”項。無法注册不可更新的人格。
 info.gcsakura.nocraftman,找不到craftman/craftmanw/craftmanurl條目之一。無法注册具有不完整作者資訊的人格。
 info.gcsakura.disconnect,無法連接到GCS（Ghost Capter Sakura）服務器。
+
+info.archivepassword.first,此存檔/NAR受密碼保護。\n請輸入密碼。
+info.archivepassword.retry,密碼不匹配。\n請輸入正確的密碼。
+
 //Resource
 resource.common.yesno,是,不
 resource.common.okcancel,確定,取消
@@ -50,45 +67,57 @@ resource.common.other,其他
 resource.common.menu,目錄
 resource.common.sameas,同樣的處理也適用於以下項目
 resource.common.dontsayagain,不再提示
+
 resource.listdialoglabel,名字,作者,路徑,本體名,使魔名
 resource.listdialogfind,請輸入你想査詢的文字。
 resource.scriptloglabel,路徑,類別,腳本
-resource.biff.allaccount,全部帳戶（&A）
+
+resource.biff.allaccount,全部帳戶(&A)
+
 resource.browser.select,選擇網頁瀏覽器
 resource.mailer.select,選擇郵箱程式
 resource.editor.select,選擇編輯器
 resource.filer.select,選擇檔案管理器
 resource.svn.select,選擇版本控制程式
 resource.git.select,選擇Git程式
+
 resource.sound.select,聲音檔案
 resource.schedule.date,記事本：%d.%d.%d
 resource.rateofuse.menu,人格呼出,人格終了,未安裝,清除數據
+
 resource.setting.balloon.command,不設定,與左鍵一樣,中止語法,改變方向,移動對話方塊,打開選單,移動角色框
 resource.setting.sstp.boot,不啟動,只有消息（SSTP/1.5）,盡可能啟動人格（IfGhost）
 resource.setting.sstp.close,當隱藏對話時關閉,留下,設定關閉時間…
 resource.setting.update,標準（和其他系統相容）,嚴格（SSP預設）,修復模式（全部檢查）
 resource.aboutghost.select,人格資訊…,外形資訊…
 resource.explorer.select,人格,外形,對話方塊,線上新聞,外掛
+
 resource.setting.ghostcloseduration,直到人格關閉為止
 resource.setting.title,SSP:內部設定
 resource.setting.messengerlabel,用戶名,地址,埠,團體
 resource.setting.dirservlabel,服務器,登入,說明
 resource.setting.ipportlabel,埠,狀況
 resource.setting.bifflabel,帳戶,地址,自動檢查
+
 resource.update.latest,已經在使用最新版本。不需要更新。
 resource.update.exist,新版本已發佈。想要下載並安裝嗎？
 resource.update.error,無法檢查SSP版本。
+
 resource.schedule.type,事件,會議,約會,預約,限制時間,晚會,日期,工作,外出,電視節目,唱片,Cd,遊戲,錄影,書,其他
+
 //Script
 script.biff.check,檢查郵件…
 script.updatedata.creating,製作網絡更新檔案…
 script.updatedata.created,網絡更新檔案已建立。
 script.nar.creating,製作NAR…
 script.nar.created,NAR製作完畢。
+
 //Messenger
 messenger.info.deluser,確定要删除選擇的收件人嗎？
+
 //POP
 biff.info.delaccount,確定删除所選帳戶嗎？
+
 //LOG
 log.definedtwice,重複定義。
 log.boundrectempty,邊框面積為空。
@@ -111,3 +140,4 @@ log.compatibility,這個定義在相容性上有問題。
 log.moduleerror,通信錯誤。可能有檔案損壞。
 log.similar,--相似記錄重複次數：
 log.pngpna,PNA大小與PNG不同，或者PNA不是灰度：
+log.lavfilter,您可以嘗試安裝LAV Filters ( https://github.com/Nevcairiel/LAVFilters/releases ) 并重新啟動SSP以解決此問題。
