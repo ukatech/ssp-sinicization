@@ -38,6 +38,6 @@ menu.font.name,²Ó©úÅé
 menu.font.height,12
 
 //Help document URL
-helpurl,https://steve02081504.github.io/about/
+helpurl,http://ssp.shillest.net/ukadoc/ssphelp/
 
 
