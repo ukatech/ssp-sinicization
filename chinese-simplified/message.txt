@@ -59,6 +59,8 @@ info.gcsakura.disconnect,无法连接到GCS（Ghost Capter Sakura）服务器。
 info.archivepassword.first,此存档/NAR受密码保护。\n请输入密码。
 info.archivepassword.retry,密码不匹配。\n请输入正确的密码。
 
+info.developer.testupdate,请输入更新文件数量。
+
 //Resource
 resource.common.yesno,是,不
 resource.common.okcancel,确定,取消
