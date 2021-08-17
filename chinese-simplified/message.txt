@@ -8,6 +8,11 @@ error.invalidipport,不能使用所设置的端口。请把它设置在 1024 与
 error.sstp.cannotlisten,不能连接,网络连接设置因为端口问题发生故障。\n请检查是否该端口与其他应用程序所设置相重叠, 或是一个错误端口。
 error.nofile,相关文件或文件夹丢失。\n请重新安装SSP或手动修正。
 
+error.tempboot,SSP正在临时目录中启动。
+error.uacboot,SSP正在UAC保护目录中启动。
+error.asciiboot,SSP正在有字符编码问题的目录中启动。
+error.bootanyway,这种情况可能会导致数据丢失。无论如何你都想启动吗？
+
 //Ask / Info
 info.threadbusy,正在处理一些命令。\n请等几分钟再试一次。\n\n真的要强行中止吗?
 info.compatiblemode,该人格也许需要旧规格的支持。\n要开启旧规格支援模式吗?
