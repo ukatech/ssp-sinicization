@@ -270,7 +270,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
   POPUP "Headline"
   {
     MENUITEM "Read(&X)\tCtrl+H",  5019
-    MENUITEM "&Jump To Author Website\tCtrl+J",  5036
+    MENUITEM "Jump to Subscribing &Website\tCtrl+W",  5036
     MENUITEM SEPARATOR
     MENUITEM "&Delete",  5017
     MENUITEM "&Open Folder\tCtrl+O",  5022
@@ -278,7 +278,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     {
       MENUITEM SEPARATOR
     }
-    MENUITEM "&Jump To Creator's Website\tCtrl+J",  5036
+    MENUITEM "&Jump To Author Website\tCtrl+J",  5036
     MENUITEM "Open &Readme Document",  5081
     MENUITEM SEPARATOR
     MENUITEM "&Network Update\tCtrl+U",  5033
@@ -305,6 +305,22 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     MENUITEM "&Network Update\tCtrl+U",  5033
     MENUITEM SEPARATOR
     MENUITEM "Enable &Logging",  5095
+    MENUITEM SEPARATOR
+    MENUITEM "Create &Update File",  5034
+    MENUITEM "Create &NAR...",  5015
+    MENUITEM "Create &Both...",  5014
+    MENUITEM "Create &Zip+Txt Update Package",  5089
+  }
+  POPUP "Language"
+  {
+    MENUITEM "Change(&X)\tCtrl+H",  5019
+    MENUITEM SEPARATOR
+    MENUITEM "&Delete",  5017
+    MENUITEM "&Open Folder\tCtrl+O",  5022
+    MENUITEM "&Jump To Author Website\tCtrl+J",  5036
+    MENUITEM "Open &Readme Document",  5081
+    MENUITEM SEPARATOR
+    MENUITEM "&Network Update\tCtrl+U",  5033
     MENUITEM SEPARATOR
     MENUITEM "Create &Update File",  5034
     MENUITEM "Create &NAR...",  5015
@@ -381,6 +397,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     MENUITEM "&Balloon",  5028
     MENUITEM "&Headline",  5030
     MENUITEM "&Plugin",  5031
+    MENUITEM "&Language",  5097
   }
   MENUITEM "F&unction",  65535
   POPUP "&Config"
@@ -757,24 +774,27 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Select...", 1222, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 50, 37, 14 
    CONTROL "", 1067, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 83, 175, 14 
    CONTROL "Select...", 1221, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 83, 37, 14 
-   CONTROL "", 1070, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 118, 175, 14 
-   CONTROL "Select...", 1224, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 118, 37, 14 
-   CONTROL "", 1071, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 55, 137, 170, 14 
-   CONTROL "", 1072, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 246, 175, 14 
-   CONTROL "Select...", 1225, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 246, 37, 14 
-   CONTROL "", 1069, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 270, 175, 14 
-   CONTROL "Select...", 1223, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 270, 37, 14 
+   CONTROL "", 1070, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 148, 175, 14 
+   CONTROL "Select...", 1224, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 148, 37, 14 
+   CONTROL "", 1071, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 55, 167, 170, 14 
+   CONTROL "", 1072, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 276, 175, 14 
+   CONTROL "Select...", 1225, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 276, 37, 14 
+   CONTROL "", 1069, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 10, 300, 175, 14 
+   CONTROL "Select...", 1223, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 188, 300, 37, 14 
    CONTROL "Browser", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 7, 227, 29 
    CONTROL "File Manager", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 40, 227, 29 
-   CONTROL "Editor", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 73, 227, 29 
-   CONTROL "Argument", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 140, 40, 8 
-   CONTROL "Only when composing new mail. %1 = \"mailto:(Address)\"", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 154, 215, 10 
-   CONTROL "Mailer", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 107, 227, 60 
-   CONTROL "Leave Browser/Mailer boxes empty when you want to use \"Internet\" control panel settings.\nLeave File Manager box empty when you want to use Explorer.\nLeave Editor box empty when you want to use notepad.exe.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 4, 171, 227, 38 
+   CONTROL "Editor", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 73, 227, 60 
+   CONTROL "Argument", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 170, 40, 8 
+   CONTROL "Only when composing new mail. %1 = \"mailto:(Address)\"", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 184, 215, 10 
+   CONTROL "Mailer", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 137, 227, 60 
+   CONTROL "Leave Browser/Mailer boxes empty when you want to use \"Internet\" control panel settings.\nLeave File Manager box empty when you want to use Explorer.\nLeave Editor box empty when you want to use notepad.exe.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 4, 201, 227, 38 
    CONTROL "config-extprog.htm", 1137, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 174, 327, 56, 8 
-   CONTROL "Version Control System", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 226, 227, 63 
-   CONTROL "Subversion (Leave empty to use TortoiseSVN.)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 237, 213, 8 
-   CONTROL "Git (Leave empty to use TortoiseGit)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 261, 213, 8 
+   CONTROL "Version Control System", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 256, 227, 63 
+   CONTROL "Subversion (Leave empty to use TortoiseSVN.)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 267, 213, 8 
+   CONTROL "Git (Leave empty to use TortoiseGit)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 291, 213, 8 
+   CONTROL "", 1430, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 55, 102, 170, 14 
+   CONTROL "Argument", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 104, 40, 8 
+   CONTROL "%1 = File name (full path) %2 = Line Number", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 120, 214, 10 
 }
 
 120 DIALOGEX 0, 0, 210, 192
@@ -1284,7 +1304,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 
 
 1 VERSIONINFO
-FILEVERSION 2,5,11,6
+FILEVERSION 2,5,16,8
 PRODUCTVERSION 2,5,0,0
 FILEOS 0x4
 FILETYPE 0x1
@@ -1296,7 +1316,7 @@ BLOCK "StringFileInfo"
 		VALUE "Comments", " "
 		VALUE "CompanyName", "D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "FileDescription", "Language Resource DLL"
-		VALUE "FileVersion", "2, 5, 11, 6"
+		VALUE "FileVersion", "2, 5, 16, 8"
 		VALUE "InternalName", "ssp"
 		VALUE "LegalCopyright", "(C) D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "LegalTrademarks", " "

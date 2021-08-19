@@ -7,6 +7,7 @@ error.cannotshowusagegraph,起始時間不充足，所使用的時間圖表不�
 error.invalidipport,不能使用所設定的埠。請把它設定在1024與65535之間。
 error.sstp.cannotlisten,不能連接，網絡連接設定因為埠問題發生故障。\n請檢查是否該埠與其他應用程序所設定相重疊，或是一個錯誤埠。
 error.nofile,相關檔或資料夾遺失。\n請重新安裝SSP或手動修正。
+error.browserexec,啟動瀏覽器失敗。\n請檢查“設定”->“應用程序”->“瀏覽器”
 
 error.tempboot,SSP正在臨時目錄中啟動。
 error.uacboot,SSP正在UAC保護目錄中啟動。

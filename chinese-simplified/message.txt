@@ -7,6 +7,7 @@ error.cannotshowusagegraph,起始时间不充足, 所使用的时间图表不能
 error.invalidipport,不能使用所设置的端口。请把它设置在 1024 与65535 之间。
 error.sstp.cannotlisten,不能连接,网络连接设置因为端口问题发生故障。\n请检查是否该端口与其他应用程序所设置相重叠, 或是一个错误端口。
 error.nofile,相关文件或文件夹丢失。\n请重新安装SSP或手动修正。
+error.browserexec,启动浏览器失败。\n请检查"设置"->"应用程序"->"浏览器"
 
 error.tempboot,SSP正在临时目录中启动。
 error.uacboot,SSP正在UAC保护目录中启动。
