@@ -270,7 +270,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
   POPUP "在线新闻"
   {
     MENUITEM "读取(&X)\tCtrl+H",  5019
-    MENUITEM "转至作者网站(&W)\tCtrl+W",  5036
+    MENUITEM "转至作者网站(&W)\tCtrl+W",  5037
     MENUITEM SEPARATOR
     MENUITEM "删除(&D)",  5017
     MENUITEM "打开文件夹(&O)\tCtrl+O",  5022
