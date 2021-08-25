@@ -1,0 +1,59 @@
+on:
+  push:
+    tags:
+    - '*'
+
+name: auto release
+
+jobs:
+  build:
+    name: auto release
+    runs-on: ubuntu-latest
+    steps:
+      - name: tag name
+        id: get_tag_name
+        run: echo TAG_NAME=${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
+      - name: install dependencies
+        run: sudo apt-get install p7zip
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build nars
+        run: |
+          rm -rf ./.rcs ./chinese-simplified/updates.txt ./chinese-traditional/updates.txt
+          7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mtc=off -r "chinese-simplified"
+          7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mtc=off -r "chinese-traditional"
+      - name: create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: |
+            [简体中文包](https://github.com/steve02081504/ssp-sinicization/releases/download/${{ env.TAG_NAME }}/chinese-simplified.nar)：网址拖入在启动中的人格可
+            [繁體中文包](https://github.com/steve02081504/ssp-sinicization/releases/download/${{ env.TAG_NAME }}/chinese-traditional.nar)：網址拖入在啟動中的人格可
+            在使用过程中发现问题后请先尝试在线更新你的ssp、人格、以及语言包
+            若仍然有问题请[联系我](https://steve02081504.github.io/about/)
+          draft: false
+          prerelease: false
+      - name: upload chinese-simplified.nar
+        id: upload-release-asset-1
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./chinese-simplified.nar
+          asset_name: chinese-simplified.nar
+          asset_content_type: application/zip
+      - name: upload chinese-traditional.nar
+        id: upload-release-asset-2
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./chinese-traditional.nar
+          asset_name: chinese-traditional.nar
+          asset_content_type: application/zip
