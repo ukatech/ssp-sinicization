@@ -33,6 +33,9 @@ holidayname,holidays.txt
 craftman,steve02081504 base on SSP CERS
 craftmanurl,https://steve02081504.github.io/
 
+//Network Update URL
+homeurl,https://cdn.jsdelivr.net/gh/steve02081504/ssp-sinicization@master/chinese-simplified/
+
 //Popup menu font name and height
 menu.font.name,ËÎÌו
 menu.font.height,12
@@ -40,5 +43,3 @@ menu.font.height,12
 //Help document URL
 helpurl,http://ssp.shillest.net/ukadoc/ssphelp/
 
-//Update URL
-homeurl,https://github.com/steve02081504/ssp-sinicization/raw/master/chinese-simplified/
