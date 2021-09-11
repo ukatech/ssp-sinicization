@@ -20,8 +20,8 @@ jobs:
       - name: build nars
         run: |
           rm -rf ./.rcs ./chinese-simplified/updates.txt ./chinese-traditional/updates.txt
-          7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-simplified"
-          7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-traditional"
+          7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mtc=off -r "chinese-simplified"
+          7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mtc=off -r "chinese-traditional"
       - name: create release
         id: create_release
         uses: actions/create-release@v1
