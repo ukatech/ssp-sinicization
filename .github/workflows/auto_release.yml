@@ -6,20 +6,43 @@ on:
 name: auto release
 
 jobs:
-  build:
+  md5build:
+    name: auto md5 update
+    runs-on: windows-latest
+    steps:
+      - name: disable auto crlf
+        uses: steve02081504/disable-autocrlf@v1
+        with:
+          fuck-auto-CRLF: true
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: md5file-CI-build
+        uses: Taromati2/ukagaka-mirror-md5-CI-build@v1
+        with:
+          dir-path: ./chinese-simplified
+          build-mode: other
+          no-push: true
+      - name: md5file-CI-build
+        uses: Taromati2/ukagaka-mirror-md5-CI-build@v1
+        with:
+          dir-path: ./chinese-traditional
+          build-mode: other
+  
+  narbuild:
     name: auto release
     runs-on: ubuntu-latest
     steps:
-      - name: tag name
-        id: get_tag_name
+      - name: get tag name
         run: echo TAG_NAME=${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
-      - name: install dependencies
-        run: sudo apt-get install p7zip
+      - name: disable auto crlf
+        uses: steve02081504/disable-autocrlf@v1
+        with:
+          fuck-auto-CRLF: true
       - name: checkout
         uses: actions/checkout@v2
       - name: build nars
         run: |
-          rm -rf ./.rcs ./chinese-simplified/updates.txt ./chinese-traditional/updates.txt
+          rm -rf ./.rcs ./chinese-simplified/updates.txt ./chinese-traditional/updates.txt ./chinese-simplified/md5buildignore.txt ./chinese-traditional/md5buildignore.txt
           7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-simplified"
           7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-traditional"
       - name: create release
@@ -38,7 +61,6 @@ jobs:
           draft: false
           prerelease: false
       - name: upload chinese-simplified.nar
-        id: upload-release-asset-1
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,7 +70,6 @@ jobs:
           asset_name: chinese-simplified.nar
           asset_content_type: application/zip
       - name: upload chinese-traditional.nar
-        id: upload-release-asset-2
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
