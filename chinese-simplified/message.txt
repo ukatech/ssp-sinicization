@@ -67,6 +67,9 @@ info.archivepassword.retry,密码不匹配。\n请输入正确的密码。
 
 info.developer.testupdate,请输入更新文件数量。
 
+info.developer.timemachine,“hook当前时间API（Timemachine）”功能被激活。\n请使用开发人员面板来恢复正常操作。
+info.url.ghostboot,你想启动你试图打开的URL中指定的人格吗？
+
 //Resource
 resource.common.yesno,是,不
 resource.common.okcancel,确定,取消

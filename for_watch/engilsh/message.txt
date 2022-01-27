@@ -64,6 +64,9 @@ info.archivepassword.retry,Password mismatch.\nPlease input the correct password
 
 info.developer.testupdate,Please input the number of updated files.
 
+info.developer.timemachine,"Hook Current Time API (Timemachine)" function is activated.\nPlease use developer palette to resume normal operation.
+info.url.ghostboot,Do you want to launch the ghost specified in the URL that you are trying to open?
+
 //Resource
 resource.common.yesno,Yes,No
 resource.common.okcancel,OK,Cancel
