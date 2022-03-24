@@ -6,28 +6,6 @@ on:
 name: auto release
 
 jobs:
-  md5build:
-    name: auto md5 update
-    runs-on: windows-latest
-    steps:
-      - name: disable auto crlf
-        uses: steve02081504/disable-autocrlf@v1
-        with:
-          fuck-auto-CRLF: true
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: md5file-CI-build
-        uses: Taromati2/ukagaka-mirror-md5-CI-build@v1
-        with:
-          dir-path: ./chinese-simplified
-          build-mode: other
-          no-push: true
-      - name: md5file-CI-build
-        uses: Taromati2/ukagaka-mirror-md5-CI-build@v1
-        with:
-          dir-path: ./chinese-traditional
-          build-mode: other
-  
   narbuild:
     name: auto release
     runs-on: ubuntu-latest
