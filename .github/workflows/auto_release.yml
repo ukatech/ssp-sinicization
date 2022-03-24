@@ -43,8 +43,8 @@ jobs:
       - name: build nars
         run: |
           rm -rf ./.rcs ./chinese-simplified/updates.txt ./chinese-traditional/updates.txt ./chinese-simplified/md5buildignore.txt ./chinese-traditional/md5buildignore.txt
-          7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-simplified"
-          7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-traditional"
+          7z a -tzip "chinese-simplified.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-simplified" ".nar_icon"
+          7z a -tzip "chinese-traditional.nar" -mx=9 -mmt -mm=LZMA -md=1536m -mfb=273 -mtc=off -r "chinese-traditional" ".nar_icon"
       - name: create release
         id: create_release
         uses: actions/create-release@v1
