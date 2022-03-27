@@ -12,6 +12,7 @@ error.browserexec,Failed to execute browser.\nPlease check "Preferences"->"Appli
 error.tempboot,SSP is booting in the temporary directory.
 error.uacboot,SSP is booting in UAC protected directory.
 error.asciiboot,SSP is booting in a problematic directory that has a character code problem.
+error.alreadyrunning,SSP seems to be already running.
 error.bootanyway,This situation may cause data loss. Do you want to boot anyway?
 
 //Ask / Info
@@ -66,6 +67,9 @@ info.developer.testupdate,Please input the number of updated files.
 
 info.developer.timemachine,"Hook Current Time API (Timemachine)" function is activated.\nPlease use developer palette to resume normal operation.
 info.url.ghostboot,Do you want to launch the ghost specified in the URL that you are trying to open?
+
+info.shortcut.desktop,Do you want to create a shortcut to this ghost on the desktop?
+info.shortcut.startup,Do you want to make this ghost start automatically at OS startup?
 
 //Resource
 resource.common.yesno,Yes,No

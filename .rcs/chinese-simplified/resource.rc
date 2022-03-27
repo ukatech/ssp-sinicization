@@ -211,6 +211,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     MENUITEM "转至作者网站(&J)\tCtrl+J",  5036
     MENUITEM "打开readme(&R)",  5081
     MENUITEM "建立快捷方式(&S)",  5016
+    MENUITEM "在系统启动时自启",  5100
     MENUITEM "打开此人格外表列表",  5094
     MENUITEM SEPARATOR
     MENUITEM "设为默认人格(&E)",  5026
@@ -1325,7 +1326,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 
 
 1 VERSIONINFO
-FILEVERSION 2,5,84,13
+FILEVERSION 2,5,86,14
 PRODUCTVERSION 2,5,0,0
 FILEOS 0x4
 FILETYPE 0x1
@@ -1337,7 +1338,7 @@ BLOCK "StringFileInfo"
 		VALUE "Comments", " "
 		VALUE "CompanyName", "D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "FileDescription", "Language Resource DLL"
-		VALUE "FileVersion", "2, 5, 84, 13"
+		VALUE "FileVersion", "2, 5, 86, 14"
 		VALUE "InternalName", "ssp"
 		VALUE "LegalCopyright", "(C) D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "LegalTrademarks", " "

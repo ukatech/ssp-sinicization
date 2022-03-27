@@ -12,6 +12,7 @@ error.browserexec,啟動瀏覽器失敗。\n請檢查“設定”->“應用程�
 error.tempboot,SSP正在臨時目錄中啟動。
 error.uacboot,SSP正在UAC保護目錄中啟動。
 error.asciiboot,SSP正在有字元編碼問題的目錄中啟動。
+error.alreadyrunning,SSP似乎已經在運行。
 error.bootanyway,這種情況可能會導致資料丟失。無論如何你都想啟動嗎？
 
 //Ask / Info
@@ -66,6 +67,9 @@ info.archivepassword.first,此存檔/NAR受密碼保護。\n請輸入密碼。
 info.archivepassword.retry,密碼不匹配。\n請輸入正確的密碼。
 
 info.developer.testupdate,請輸入更新檔案數量。
+
+info.shortcut.desktop,你想在桌面上為這個人格創建一個快捷方式嗎？
+info.shortcut.startup,你想讓這個人格在作業系統啟動時自動啟動嗎？
 
 info.developer.timemachine,“hook當前時間API（Timemachine）”功能被啟動。 \n請使用開發人員面板來恢復正常操作。
 info.url.ghostboot,你想啟動你試圖打開的URL中指定的人格嗎？

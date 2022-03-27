@@ -211,6 +211,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     MENUITEM "&Jump To Author Website\tCtrl+J",  5036
     MENUITEM "Open &Readme Document",  5081
     MENUITEM "Create &Shortcut",  5016
+    MENUITEM "Make This Ghost Start Automatically at OS Startup",  5100
     MENUITEM "Open Shell List of This Ghost",  5094
     MENUITEM SEPARATOR
     MENUITEM "Set this As D&efault Ghost",  5026
@@ -1325,7 +1326,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 
 
 1 VERSIONINFO
-FILEVERSION 2,5,84,13
+FILEVERSION 2,5,86,14
 PRODUCTVERSION 2,5,0,0
 FILEOS 0x4
 FILETYPE 0x1
@@ -1337,7 +1338,7 @@ BLOCK "StringFileInfo"
 		VALUE "Comments", " "
 		VALUE "CompanyName", "D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "FileDescription", "Language Resource DLL"
-		VALUE "FileVersion", "2, 5, 84, 13"
+		VALUE "FileVersion", "2, 5, 86, 14"
 		VALUE "InternalName", "ssp"
 		VALUE "LegalCopyright", "(C) D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "LegalTrademarks", " "
