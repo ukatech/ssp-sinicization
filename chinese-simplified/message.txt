@@ -82,6 +82,7 @@ resource.common.other,其他
 resource.common.menu,目录
 resource.common.sameas,同样的处理也适用于以下项目
 resource.common.dontsayagain,不再提示
+resource.common.createnew,新建
 
 resource.listdialoglabel,名字,作者,路径,本体名,使魔名
 resource.listdialogfind,请输入你想查询的文字。
@@ -122,6 +123,7 @@ resource.schedule.type,事件,会议,约会,预约,限制时间,晚会,日期,�
 
 //Script
 script.biff.check,检查邮件...
+script.biff.result,邮件接收完毕。\n共%1个电子邮件，%2字节。
 script.updatedata.creating,制作网络更新文件...
 script.updatedata.created,网络更新文件已建立。
 script.nar.creating,制作NAR...

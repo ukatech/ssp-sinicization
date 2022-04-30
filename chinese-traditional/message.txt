@@ -82,6 +82,7 @@ resource.common.other,其他
 resource.common.menu,目錄
 resource.common.sameas,同樣的處理也適用於以下項目
 resource.common.dontsayagain,不再提示
+resource.common.createnew,新建
 
 resource.listdialoglabel,名字,作者,路徑,本體名,使魔名
 resource.listdialogfind,請輸入你想査詢的文字。
@@ -122,6 +123,7 @@ resource.schedule.type,事件,會議,約會,預約,限制時間,晚會,日期,�
 
 //Script
 script.biff.check,檢查郵件…
+script.biff.result,郵件接收完畢。\n共%1個電子郵件，%2位元組。
 script.updatedata.creating,製作網絡更新檔案…
 script.updatedata.created,網絡更新檔案已建立。
 script.nar.creating,製作NAR…
