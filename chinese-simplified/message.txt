@@ -1,160 +1,157 @@
 charset,UTF-8
 
 //Error Message
-error.appinit,在发送请求过程中发生了一个错误。\n为了得到更详细的错误报告,请改变 "使用除错助手" 设置。
-error.apprun,程序在执行过程中发生了一个内在的错误,所以中止运行。\n为了得到更详细的错误报告, 请改变 "使用除错助手" 设置。
-error.cannotshowusagegraph,起始时间不充足, 所使用的时间图表不能显示. 请在一分钟后重试。
-error.invalidipport,不能使用所设置的端口。请把它设置在 1024 与65535 之间。
-error.sstp.cannotlisten,不能连接,网络连接设置因为端口问题发生故障。\n请检查是否该端口与其他应用程序所设置相重叠, 或是一个错误端口。
-error.nofile,相关文件或文件夹丢失。\n请重新安装SSP或手动修正。
-error.browserexec,启动浏览器失败。\n请检查"设置"->"应用程序"->"浏览器"
+error.appinit,应用程序启动时发生错误。\n为了获取更详细的信息，请更改“使用异常处理程序”设置。
+error.apprun,应用程序在执行期间因内部错误而终止。\n为了获取更详细的信息，请更改“使用异常处理程序”设置。
+error.cannotshowusagegraph,由于运行时间不足，无法显示使用时间图表。请在大约1分钟后重试。
+error.invalidipport,端口号无效。请选择一个介于 1024 和 65535 之间的数字。
+error.sstp.cannotlisten,无法在该端口号上建立连接。\n请检查端口号是否无效，或是否与另一应用程序使用的端口号冲突。
+error.nofile,必需的文件和/或目录未找到。\n请重新安装 SSP 或手动修复。
+error.browserexec,启动浏览器失败。\n请检查“偏好设置”->“应用程序”->“浏览器”中的设置。
 
-error.tempboot,SSP正在临时目录中启动。
-error.uacboot,SSP正在UAC保护目录中启动。
-error.asciiboot,SSP正在有字符编码问题的目录中启动。
-error.alreadyrunning,SSP似乎已经在运行。
-error.bootanyway,这种情况可能会导致数据丢失。无论如何你都想启动吗？
+error.tempboot,SSP 正在临时目录中启动。
+error.uacboot,SSP 正在受 UAC 保护的目录中启动。
+error.asciiboot,SSP 正在因字符编码问题而可能无法访问的目录中启动。
+error.alreadyrunning,SSP 似乎已在运行。
+error.bootanyway,这种情况可能会导致数据丢失。确定要启动吗？
 
 //Ask / Info
-info.threadbusy,正在处理一些命令。\n请等几分钟再试一次。\n\n真的要强行中止吗?
-info.compatiblemode,该人格也许需要旧规格的支持。\n要开启旧规格支援模式吗?
-info.notinstalled,没有安装。\n要开打开下载网址吗?
-info.delghost,你确定删除这个人格吗?\n一旦执行不能取消该命令。
-info.netconnection,不能连接到网络, 或者你置了网络禁止连接时间段。\n进行连接?
-info.sstplog,请设置 SSTP 日志的最大尺寸 。\n如果日志文大小超过该设置, 将会自动删掉旧的文件。
-info.sstpport,请设置 SSTP 端口。(0-65535)
-info.serikowait,SERIKO 等待数 (请输入等待时间的百分数)
-info.charset,请选择将使用的人格语系。
-info.vanish,反安装功能禁止。\n请先切换设定。
-info.sender,请输入SHIORI发送器文本。\n(Materia:embryo CROW:crow Default:empty/SSP)
+info.threadbusy,一些命令正在处理中。\n请稍等几分钟后再试一次。\n\n您确定要强制终止吗？
+info.compatiblemode,这个人格可能需要旧规范支持。\n要切换到旧规范支持模式吗？
+info.notinstalled,未安装。\n是否打开分发网址？
+info.delghost,您确定要删除这个人格吗？\n此操作无法撤销。
+info.netconnection,未连接到网络，或者当前时间在您指定的禁止连接时段内。\n是否要连接？
+info.sstplog,请指定 SSTP 日志的最大大小。\n如果日志文件大于此设置，旧文件将被删除。
+info.sstpport,请指定要侦听的 SSTP 端口号 (0-65535)。
+info.serikowait,您希望将 SERIKO 的“等待”时间乘以什么百分比？ (100 = 正常)
+info.charset,请选择一个默认的字符编码。
+info.vanish,卸载功能已禁用。\n请禁用此设置后重试。
+info.sender,请输入要传递给 SHIORI 的 Sender 文本\n(Materia: embryo  CROW: crow  默认: 空/ssp)
 
-info.install.overlap,目标文件夹已存在。\n你想安装到其他目录吗?
-info.install.refresh,将删除所有旧目录和更新。\n你想要安装到其他目录吗?
+info.install.overwrite,正在尝试安装到现有目录。\n您想要覆盖它吗？
+info.install.overwrite.additional,选择“是”以覆盖它。\n选择“否”以自动更改文件夹名称并避免覆盖。
+info.install.refresh.a,正在尝试在现有目录中进行全新（刷新）安装。\n现有数据将会丢失。您想要覆盖它吗？
 
-info.install.overwrite,正在尝试安装到现有目录。\n你想要覆盖它吗？
-info.install.overwrite.additional,选择“是”覆盖。\n选择“不”自动更改文件夹名称以避免覆盖。
-info.install.refresh.a,正在尝试干净（全新）安装到现有目录。\n现有数据将丢失。你想要覆盖它吗？
+info.install.invalidsupplement,这似乎是一个无效的补充文件。\n仍然要安装吗？
+info.install.select,请选择一个安装目标。
 
-info.install.invalidsupplement,目标文件可能存在问题。\n无论如何都要安装吗?
-info.install.select,请选择安装文件夹
+info.recommended.g-to-b.change.recommend,您选择了一个人格推荐之外的对话框。\n如果切换，人格的行为可能会异常。\n仍然要切换吗？
+info.recommended.g-to-b.delete.default,您将要删除被以下人格指定为标准的对话框“%2”：\n%1\n仍然要删除吗？
+info.recommended.g-to-b.delete.recommend,您将要删除被以下人格推荐的对话框“%2”：\n%1\n如果删除，某些人格的行为可能会出错。\n仍然要删除吗？
 
-info.recommended.g-to-b.change.recommend,你已选择了人格建议之外的对话框。\n如果切换，人格可能出现意外行为。\n是否仍要更改？
-info.recommended.g-to-b.delete.default,你正在删除对话框"%2"，这个对话框被以下人格推荐：\n%1\n仍然删除？
-info.recommended.g-to-b.delete.recommend,你正在删除对话框"%2"，这个对话框被以下人格指定：\n%1\n如果你进行了删除，某些人格可能出现意外行为。\n仍然删除？
+info.recommended.b-to-g.change.recommend,这个对话框是以下人格的推荐（专用）对话框：\n%1\n不建议将此对话框与其他不推荐的人格一起使用。\n仍然要切换吗？
+info.recommended.b-to-g.delete.recommend,所有推荐使用对话框“%1”的人格都已被删除。\n是否也删除此对话框？
 
-info.recommended.b-to-g.change.recommend,这个对话框为以下人格专用：\n%1\n这个对话框不被推荐给其他人格使用。\n是否仍要更改？
-info.recommended.b-to-g.delete.recommend,已删除所有使用对话框"%1"的人格。\n顺便删除此对话框么？
+info.toomanyselection,您选择了大量的项目。\n确定要执行吗？
 
-info.toomanyselection,选择的元素有些多。\n确认执行？
+info.errorlog,存在错误和/或警告。单击以查看错误日志。
+info.overwrite,已存在。\n是否覆盖？
 
-info.errorlog,存在错误/警告日志。单击此处显示错误日志列表。
-info.overwrite,已经存在。\n是否覆写？
+info.developer,和我签订契约，成为开发者吧！\n如果启用此功能，请做好各种准备，例如人格的重大剧透。\n仍然要启用吗？
 
-info.developer,和我契约，成为开发者吧！\n打开这个功能的话，需要做好人格大剧透等各种各样的觉悟。\n仍然确定吗？
+info.developer.exit,当前处于“禁用 \\- 标签关闭”模式。\n请更改开发面板设置以恢复正常操作。
+info.developer.update,当前处于“更新仅检查”模式。\n请使用开发面板设置恢复正常操作。
 
-info.developer.exit,现在在“禁用\-标记退出”模式下。\n请使用开发人员面板进行设置以恢复正常。
-info.developer.update,现在在“更新只检查”模式下。\n请使用开发人员面板进行设置以恢复正常。
+info.virtualdesktop,角色已在另一个虚拟桌面上显示。
 
-info.virtualdesktop,已在另一虚拟桌面启动。
+info.gcsakura.found,这个人格已经注册。
+info.gcsakura.deny,由于 install.txt 或 robots.txt 的配置，注册被拒绝。
+info.gcsakura.nohomeurl,未找到必需的“homeurl”条目。无法注册不可更新的人格。
+info.gcsakura.nocraftman,未找到 craftman、craftmanw 或 craftmanurl 条目。无法注册创作者信息不完整的人格。
+info.gcsakura.disconnect,无法连接到 Ghost Captor Sakura 服务器。
 
-info.gcsakura.found,这个人格已经登录了。
-info.gcsakura.deny,由于install.txt或robots.txt配置，注册被拒绝。
-info.gcsakura.nohomeurl,找不到必需的“homeurl”项。无法注册不可更新的人格。
-info.gcsakura.nocraftman,找不到craftman/craftmanw/craftmanurl条目之一。无法注册具有不完整作者信息的人格。
-info.gcsakura.disconnect,无法连接到GCS（Ghost Capter Sakura）服务器。
+info.archivepassword.first,此存档/NAR 受密码保护。\n请输入密码。
+info.archivepassword.retry,密码不正确。\n请输入正确的密码。
 
-info.archivepassword.first,此存档/NAR受密码保护。\n请输入密码。
-info.archivepassword.retry,密码不匹配。\n请输入正确的密码。
+info.developer.testupdate,请输入更新文件的数量。
 
-info.developer.testupdate,请输入更新文件数量。
+info.developer.timemachine,“虚拟更改时间 (TimeMachine)”功能已激活。\n请使用开发面板恢复正常操作。
+info.url.ghostboot,您想启动您尝试打开的 URL 中指定的人格吗？
 
-info.shortcut.desktop,你想在桌面上为这个人格创建一个快捷方式吗？
-info.shortcut.startup,你想让这个人格在操作系统启动时自动启动吗？
-
-info.developer.timemachine,“hook当前时间API（Timemachine）”功能被激活。\n请使用开发人员面板来恢复正常操作。
-info.url.ghostboot,你想启动你试图打开的URL中指定的人格吗？
+info.shortcut.desktop,您想在桌面上为这个人格创建快捷方式吗？
+info.shortcut.startup,您想让这个人格在操作系统启动时自动启动吗？
 
 //Resource
 resource.common.yesno,是,不
-resource.common.okcancel,确定,取消
-resource.common.addmoddel,加入,修改,删除
+resource.common.okcancel,确认,取消
+resource.common.addmoddel,添加,修改,删除
 resource.common.other,其他
-resource.common.menu,目录
-resource.common.sameas,同样的处理也适用于以下项目
-resource.common.dontsayagain,不再提示
-resource.common.createnew,新建
+resource.common.menu,菜单
+resource.common.sameas,将此选择应用于所有后续项目
+resource.common.dontsayagain,不再显示此消息
+resource.common.createnew,新建一个
 
-resource.listdialoglabel,名字,作者,路径,本体名,使魔名
-resource.listdialogfind,请输入你想查询的文字。
-resource.scriptloglabel,路径,类别,脚本
+resource.listdialoglabel,名称,作者,路径,组,\0 名称,\1 名称,已安装,最后更新,更新结果
+resource.listdialogfind,请输入您想查找的文本。
+resource.scriptloglabel,人格,类型,脚本
 
-resource.biff.allaccount,全部帐户(&A)
+resource.biff.allaccount,所有账户(&A)
 
 resource.browser.select,选择网页浏览器
-resource.mailer.select,选择邮箱程序
+resource.mailer.select,选择邮件程序
 resource.editor.select,选择编辑器
 resource.filer.select,选择文件管理器
-resource.svn.select,选择版本控制程序
-resource.git.select,选择Git程序
+resource.svn.select,选择 Subversion 可执行文件
+resource.git.select,选择 Git 可执行文件
 
 resource.sound.select,声音文件
-resource.schedule.date,记事本:%d.%d.%d
-resource.rateofuse.menu,人格呼出,人格终了,未安装,清除数据
+resource.schedule.date,日程:%d.%d.%d
+resource.rateofuse.menu,呼叫人格,关闭人格,未找到人格,删除此数据
 
-resource.setting.balloon.command,不设定,与左键一样,中止语法,改变方向,移动对话框,打开菜单,移动角色框
-resource.setting.sstp.boot,不启动,只有消息(SSTP/1.5),尽可能启动人格 (IfGhost)
-resource.setting.sstp.close,当隐藏对话时关闭,留下,设置关闭时间...
-resource.setting.update,标准(和其他系统相容),严格(SSP预设),修复模式(全部检查)
-resource.aboutghost.select,人格信息...,外形信息...
-resource.explorer.select,人格,外形,对话框,在线新闻,外挂
+resource.setting.balloon.command,不执行任何操作,与左键单击相同,终止脚本,改变方向,改变对话框偏移,显示菜单,移动角色窗口
+resource.setting.sstp.boot,不启动,仅通讯 (SSTP/1.5),尽可能启动人格 (IfGhost)
+resource.setting.sstp.close,对话框消失时关闭,保留,设置关闭计时器...
+resource.setting.update,兼容其他客户端,严格 (SSP 默认),恢复模式 (检查所有文件)
+resource.aboutghost.select,人格信息...,外壳信息...,对话框信息...
+resource.explorer.select,人格,外壳,对话框,在线新闻,插件
 
-resource.setting.ghostcloseduration,直到人格关闭为止
-resource.setting.title,SSP:内部设定
-resource.setting.messengerlabel,用户名,地址,端口,团体
-resource.setting.dirservlabel,服务器,登陆,说明
-resource.setting.ipportlabel,端口,状况
+resource.setting.ghostcloseduration,直到人格关闭的时间
+resource.setting.title,SSP：设置
+resource.setting.messengerlabel,用户名,地址,端口,组
+resource.setting.dirservlabel,服务,登录,描述
+resource.setting.ipportlabel,端口,状态
 resource.setting.bifflabel,账户,地址,自动检查
 
-resource.update.latest,已经在使用最新版本。不需要更新。
-resource.update.exist,新版本已发布。想要下载并安装吗?
-resource.update.error,无法检查 SSP 版本。
+resource.update.latest,您正在使用最新版本。无需更新。
+resource.update.exist,有新版本可用。您想下载吗？
+resource.update.error,无法检查 SSP 的版本。
 
-resource.schedule.type,事件,会议,约会,预约,限制时间,晚会,日期,工作,外出,电视节目,唱片,Cd,游戏,录像,书,其他
+resource.schedule.type,事件,会议,约会,预约,截止日期,派对,日期,工作,外出,电视,节目录制,CD发行,游戏发行,视频/DVD发行,书籍/杂志发行,其他发行
 
 //Script
-script.biff.check,检查邮件...
-script.biff.result,邮件接收完毕。\n共%1个电子邮件，%2字节。
-script.updatedata.creating,制作网络更新文件...
-script.updatedata.created,网络更新文件已建立。
-script.nar.creating,制作NAR...
-script.nar.created,NAR制作完毕。
+script.biff.check,正在检查邮件...
+script.biff.result,邮件已送达。\n%1 封邮件，%2 字节。
+script.updatedata.creating,正在创建在线更新文件...
+script.updatedata.created,在线更新文件已创建。
+script.nar.creating,正在创建 NAR...
+script.nar.created,NAR 已创建。
 
 //Messenger
-messenger.info.deluser,确定要删除选择的收件人吗?
+messenger.info.deluser,确定要删除所选收件人吗？
 
 //POP
-biff.info.delaccount,确定删除所选账户吗?
+biff.info.delaccount,确定要删除所选账户吗？
 
 //LOG
-log.definedtwice,重复定义。
-log.boundrectempty,边框面积为空。
-log.offset,坐标位置错误。
-log.notfound,找不到。
+log.definedtwice,被重复定义。
+log.boundrectempty,边界矩形为空。
+log.offset,偏移错误。
+log.notfound,未找到。
 log.empty,为空。
-log.noimage,没有影像。
-log.invalid,不合法
-log.typo,误字
-log.orphan,没有被使用
-log.bracebeginnotfound,"{" 找不到。
-log.braceendnotfound,"}" 找不到。
-log.braceextrachar,额外字元。在 "{" 或 "}" 前后。
-log.newold,新定义，旧版本。（重复定义）
-log.oldnew,旧定义，新版本。（重复定义）
-log.invalidalias,不合法的别名。
-log.urlslashadd,URL "/" 已加入。
-log.deletetxtconflict,已在 delete.txt 中
-log.compatibility,这个定义在兼容性上有问题。
-log.moduleerror,通信错误。可能有文件损坏。
-log.similar,--相似记录重复次数：
-log.pngpna,PNA大小与PNG不同，或者PNA不是灰度：
-log.lavfilter,您可以尝试安装LAV Filters ( https://github.com/Nevcairiel/LAVFilters/releases ) 并重新启动SSP以解决此问题。
+log.noimage,没有图像。
+log.invalid,是无效的
+log.typo,是无效的
+log.orphan,未在任何地方使用。
+log.bracebeginnotfound,未找到“{”。
+log.braceendnotfound,未找到“}”。
+log.braceextrachar,“{”或“}”后有额外字符。
+log.newold,您正在使用新定义语法，但指定的是旧定义。或者，您忘记使用 “descript { version,1 }”。
+log.oldnew,您正在使用旧定义语法，但指定的是新定义。
+log.invalidalias,无效的别名 (文件名)。
+log.urlslashadd,请在 URL 末尾添加一个“/”。
+log.deletetxtconflict,也存在于 delete.txt 中
+log.compatibility,此定义存在兼容性问题。
+log.moduleerror,通信错误。文件是否已损坏？
+log.similar,——相似日志消息的重复次数：x
+log.pngpna,此 PNA 的大小与 PNG 不同，或者 PNA 不是灰度图像：
+log.lavfilter,您可以尝试安装 LAV Filters ( https://github.com/Nevcairiel/LAVFilters/releases ) 并重启 SSP 来解决此问题。
