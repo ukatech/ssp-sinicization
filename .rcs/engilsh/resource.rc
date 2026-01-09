@@ -489,6 +489,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Show character on all virtual desktops (Win10 or later)", 1143, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 158, 227, 10
    CONTROL "Bring other windows to front when clicking character", 1446, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 170, 227, 10
    CONTROL "Enable high DPI awareness [Needs SSP restart]", 1447, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 182, 227, 10
+   CONTROL "Automatically move off-screen windows into view", 1462, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 193, 226, 10
 }
 
 104 DIALOG 0, 0, 235, 335
@@ -1178,7 +1179,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Continue", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 200, 151, 50, 14
    CONTROL "Exit", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 145, 151, 50, 14
    CONTROL "Please do something.", -1, STATIC, SS_CENTER | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 4, 4, 246, 32 , WS_EX_CLIENTEDGE
-   CONTROL "Boot sequence failed because Ghosts and/or Balloons weren't found.\nTo continue boot sequence, please drag and drop NAR archives onto this window\nor change the directory configuration using the buttons below.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 4, 43, 228, 28
+   CONTROL "Boot sequence failed because Ghosts and/or Balloons weren't found.\nTo continue boot sequence, drag and drop NAR archives onto this window\nor change the directory configuration using the buttons below.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 4, 43, 228, 28
    CONTROL "Edit directory list...", 1119, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 149, 84, 95, 14
    CONTROL "Edit directory list...", 1026, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 149, 122, 95, 14
    CONTROL "Ghost", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 73, 246, 31
@@ -1429,7 +1430,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 
 
 1 VERSIONINFO
-FILEVERSION 2,7,0,1
+FILEVERSION 2,7,21,3
 PRODUCTVERSION 2,7,0,0
 FILEOS 0x4
 FILETYPE 0x1
@@ -1441,7 +1442,7 @@ BLOCK "StringFileInfo"
 		VALUE "Comments", " "
 		VALUE "CompanyName", "D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "FileDescription", "Language Resource DLL"
-		VALUE "FileVersion", "2, 7, 0, 1"
+		VALUE "FileVersion", "2, 7, 21, 3"
 		VALUE "InternalName", "ssp"
 		VALUE "LegalCopyright", "(C) D-EXCLAMATION / SSP BUGTRAQ"
 		VALUE "LegalTrademarks", " "
@@ -1454,7 +1455,7 @@ BLOCK "StringFileInfo"
 
 BLOCK "VarFileInfo"
 {
-	VALUE "Translation", 0x0000 0x04B0  
+	VALUE "Translation", 0x0000 0x04B0
 }
 }
 
